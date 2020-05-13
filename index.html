@@ -3,14 +3,32 @@
   <head>
     <title>Helvey Activity Market</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="src/styles.css?v=1">
   </head>
 
   <body>
-    <div>
-      <h1>Helvey Activity Market</h1>
+    <div id="outerContainer">
+      <div id="innerContainer">
+        <div> <h1>Helvey Activity Market</h1></div>
+        <div id="app">
+          <table id="activityTable">
+            <tr>
+              <th>Activity</th>
+              <th>
+                <div class='tooltip'>Points
+                  <span class="tooltiptext">Earn this many points per 30 minutes</span>
+                </div>
+              </th>
+              <th id='bonusHead'>
+                <div class='tooltip'>Optional Bonus
+                  <span class="tooltiptext wider">Complete this extra challenge to double the points!</span>
+                </div>
+              </th>
+            </tr>
+          </table>
+        </div>
+        <script src="src/index.js"></script>
+      </div>
     </div>
-    <div id="app"></div>
-
-    <script src="src/index.js"></script>
   </body>
 </html>

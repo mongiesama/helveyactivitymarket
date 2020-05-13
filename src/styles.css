@@ -1,3 +1,93 @@
+@font-face {
+  font-family: bigRounded;
+  src: url(junegull.ttf);
+}
+@font-face {
+  font-family: coolText;
+  src: url(cmunvi.ttf);
+}
+@font-face {
+  font-family: impressiveHeader;
+  src: url(cmunobx.ttf);
+}
+
+#outerContainer {
+  text-align: center;
+}
+#innerContainer {
+  display: inline-block;
+}
+
+h1 {
+  font-family: bigRounded, "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 75px;
+}
+table {
+  width: 100%;
+}
+th {
+  font-family: impressiveHeader, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 30px;
+  text-align: left;
+  padding-bottom: 20px;
+}
 body {
-  font-family: sans-serif;
+  font-family: coolText, "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+.tooltiptext {
+  font-family: coolText, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 14px;
+}
+td {
+  text-align: left;
+}
+.pointsEntry {
+  text-align: center
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip:hover {
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  margin-left: -90px; /* Use half of the width to center the tooltip */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+
+  bottom: 100%;
+  left: 50%;
+}
+
+.tooltip .tooltiptext.wider {
+  width: 250px;
+  margin-left: -125px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
 }

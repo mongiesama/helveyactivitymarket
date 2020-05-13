@@ -16,6 +16,7 @@
 }
 #innerContainer {
   display: inline-block;
+  width: 90%;
 }
 
 h1 {
@@ -24,11 +25,15 @@ h1 {
 }
 table {
   width: 100%;
+  border-collapse: collapse;
+}
+#activityHead {
+  width: 30%;
 }
 th {
   font-family: impressiveHeader, "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 30px;
-  text-align: left;
+  text-align: center;
   padding-bottom: 20px;
 }
 body {
@@ -40,9 +45,14 @@ body {
 }
 td {
   text-align: left;
+  padding: 3px;
+  border: none;
 }
 .pointsEntry {
   text-align: center
+}
+.even {
+  background-color: #DDDDDD;
 }
 
 .tooltip {
@@ -75,6 +85,11 @@ td {
 .tooltip .tooltiptext.wider {
   width: 250px;
   margin-left: -125px;
+}
+
+.tooltip .tooltiptext.narrower {
+  width: 200px;
+  margin-left: -100px;
 }
 
 .tooltip:hover .tooltiptext {
